@@ -7,6 +7,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { searchForWorkspaceRoot } from 'vite';
 import { defineConfig } from 'vitest/config';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const API_PATH = path.join('..', 'api');
 
@@ -73,6 +76,7 @@ export default defineConfig({
 		},
 	},
 });
+
 
 function getExtensionsRealPaths() {
 	return extensionsPathExists
