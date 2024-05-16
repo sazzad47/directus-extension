@@ -50,3 +50,5 @@ TODO
 /tests/blackbox/sequencer-data.json
 /packages/extensions-sdk/temp-extension-*/
 /docs/packages/
+temp_auto_push.bat
+temp_interactive_push.bat
